@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+     <script src="script.js">
+     </script>
+</head>
+<body>
+    <section id="corpo">
+     <div id="tela">
+            <p id="input_tela"></p>
+     </div>
+     <div id="input_teclasEquacao">
+        <form action="" id="teclasEquacao">
+                <input type="button" value="+" class="equacao" onclick="insert('+')">
+                <input type="button" value="-" class="equacao" onclick="insert('-')">
+                <input type="button" value="*" class="equacao" onclick="insert('*')">
+                <input type="button" value="/" class="equacao" onclick="insert('/')">
+        </form>
+     </div>
+     <div id="input_teclasNumericas">
+        <div id="teclasNumericas">
+          <input type="button" value="7" class="numericos" onclick="insert('7')">
+          <input type="button" value="8" class="numericos" onclick="insert('8')">
+          <input type="button" value="9" class="numericos" onclick="insert('9')">
+          <input type="button" value="4" class="numericos" onclick="insert('4')">
+          <input type="button" value="5" class="numericos" onclick="insert('5')">
+          <input type="button" value="6" class="numericos" onclick="insert('6')">
+          <input type="button" value="1" class="numericos" onclick="insert('1')">
+          <input type="button" value="2" class="numericos" onclick="insert('2')">
+          <input type="button" value="3" class="numericos" onclick="insert('3')">
+          <input type="button" value="0" class="numericos" onclick="insert('0')">
+          <input type="button" value="." class="numericos" onclick="insert('.')">
+          <input type="button" value="C" class="numericos" onclick="insert('C')">
+          </div>
+         <div id="teclaIgual">
+            <input type="button" value="=" id="igual" onclick="conta()">
+         </div>
+     </div>
+    </section>
+</body>
+</html>

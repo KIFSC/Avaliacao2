@@ -1,0 +1,63 @@
+section#corpo{
+    width: 600px;
+    height: 450px;
+    border: 1px solid black;
+}
+
+#tela{
+    border: 1px solid black;
+    margin: 10px;
+    height: 50px;
+}
+
+#input_tela{
+    
+    padding-left: 10%;
+}
+
+form{
+    padding: 6px;
+}
+
+input{
+    width: 92%;
+    padding: 20px;
+}
+
+#teclasEquacao{
+    display: flex;
+    flex-direction: row;
+}
+
+.equacao{
+    margin: 6px;
+    font-size: 14px;
+}
+
+
+#input_teclasNumericas{
+    display: flex;
+    margin: 10px;
+}
+
+#teclasNumericas{
+    height: 50px;
+    
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+input.numericos{
+    width: 150px;
+    margin: 4px;
+}
+
+
+
+#igual{
+ height: 260px;
+ width: 90px; 
+ background-color: blue;
+ color: white;
+}

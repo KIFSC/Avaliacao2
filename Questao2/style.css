@@ -1,0 +1,25 @@
+
+
+body{
+     background-color: rgb(66, 66, 66);
+}
+
+section{
+    display: flex;
+    justify-content: space-around;
+}
+
+#blocoConometro{
+   
+}
+
+#parar{
+    width: 100px;
+    height: 40px;
+}
+
+#blocoParadas{
+    background-color: gray;
+    width: 400px;
+    height: 100vw;
+}
