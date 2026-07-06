@@ -5,18 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
 </head>
 <body>
     <section>
         <article id="blocoConometro">
-           <p></p>
-            <button id="parar" value="parar">Parar</button>
+             <p id="crono"></p>
+            <button class="botoes" value="parar" onclick="zerarContador()">Zerar</button>
+            <button class="botoes" value="pausar" onclick="pausarTimer()">Pausar</button>
         </article>
         <article id="blocoParadas">
            <h1>Paradas</h1>
-
+            <div id="paradas"></div>
         </article>
     </section>
+
+      <script src="script.js"></script>
 </body>
 </html>

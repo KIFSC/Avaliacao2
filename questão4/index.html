@@ -4,14 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-    <label for="busca">Busca</label>
-    <input type="text" id="busca">
-    <button id="button">Buscar</button>
-    <div class="resultado"></div>
+    <h1 id="titulo">Sistema de Busca de Filmes</h1>
+    <div id="blocoBusca">
+    <label id = "Texto" class="parteBusca" for="busca">Buscar Filme</label>
+    <input  type="text" id="busca" class="parteBusca" placeholder="Ex:Ben 10">
+    <button id="button" class="parteBusca">Buscar</button>
+    </div>
+    <div class="resultado" id="blocoFilme"></div>
 
 
     <script>
@@ -20,7 +22,7 @@
         button.addEventListener("click" , ()=>{
             let stringBusca = document.getElementById("busca").value;
 
-            fetch(`http://www.omdbapi.com/?apikey=${apikey}&s=${stringBusca}`).then((result)=>{
+            fetch(`http://www.omdbapi.com/?apikey=${apikey}&s=${stringBusca}&plot=full`).then((result)=>{
                 return result.json();
             }).then((data) => {
                 console.log(data);
@@ -35,7 +37,7 @@
             filmes.forEach(filmes => {
                 htmlfilme += `<div class="filme">
                     <h2>${filmes.Title}<\h2>
-                    <img src="${filmes.Poster}" alt=${filmes.Title}>
+                    <img width = 200px  height =  100px src="${filmes.Poster}" alt=${filmes.Title}>
                     <p>${ filmes.Year}</p>
                     </div>    
                     `

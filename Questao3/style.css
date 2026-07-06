@@ -1,0 +1,58 @@
+.blocoNota{
+    position: relative;
+    display: flex;
+    border: 2px solid rgba(0, 39, 131, 0.505);
+    max-width: 600px;
+    min-width: 200px;
+    padding: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    margin-top: 20px;
+}
+
+.blocoButtom{
+    position: absolute;
+    left: 85%;
+    top: 15px;
+}
+
+#Titulo{
+    background-color: rgb(33, 94, 236);
+    color: aliceblue;
+    width: 325px;
+    padding: 4px;
+    border: 2px solid rgba(0, 39, 131, 0.505);
+}
+
+#input{
+    width: 400px;
+    height: 35px;
+    border: 2px solid rgba(0, 39, 131, 0.505);
+}
+
+#Buttom{
+    background-color: rgb(33, 94, 236);
+    padding: 2px;
+    width: 60px;
+    height: 40px;
+    color: aliceblue;
+    border: 2px solid rgba(0, 39, 131, 0.505);
+}
+
+.input{
+    width: 400px;
+    padding: 10px;
+}
+
+.excluir{
+    background-color: red;
+    border-radius: 10%;
+    margin-right: 10px;
+    padding: 6px;
+    border: 0px;
+    color: white;
+}
+    .editar{
+        background-color: white;
+        border: 0px;
+        font-size: 20px;
+    }

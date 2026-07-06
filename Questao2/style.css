@@ -9,17 +9,35 @@ section{
     justify-content: space-around;
 }
 
-#blocoConometro{
-   
+#crono{
+    font-size: 60px;
+    color: aliceblue;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-#parar{
+.botoes{
     width: 100px;
     height: 40px;
+    font-size: 20px;
 }
 
 #blocoParadas{
     background-color: gray;
-    width: 400px;
-    height: 100vw;
+    width: 600px;
+    height: 60vw;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: aliceblue;
+}
+
+#paradas{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 300px;
+    height: 55vw;
+    font-size: 14px;
 }
